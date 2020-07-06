@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CalBMI</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">SEND</string>
+    <string name="header">BMI Calculator</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmiimagedes">BMI Image Description</string>
+    <string name="hints">0</string>
+    <string-array name="weight">
+        <item>kilograms</item>
+        <item>lbs</item>
+    </string-array>
+
+    <string-array name="height">
+        <item>meter</item>
+        <item>feet</item>
+    </string-array>
+
+</resources>
