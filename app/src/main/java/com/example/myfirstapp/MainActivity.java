@@ -71,5 +71,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Spinner weight=(Spinner)findViewById(R.id.spinnerWeight);
+        ArrayAdapter<CharSequence> weightAdapter= ArrayAdapter.createFromResource(this,R.array.weight, android.R.layout.simple_spinner_item);
+        weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        weight.setAdapter(weightAdapter);
+
+        Spinner height=(Spinner)findViewById(R.id.spinnerHeight);
+        ArrayAdapter<CharSequence> heightAdapter= ArrayAdapter.createFromResource(this,R.array.height, android.R.layout.simple_spinner_item);
+        heightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        height.setAdapter(heightAdapter);
     }
 }
