@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
             double height = Double.parseDouble(heightValue.getText().toString());
 
 
-            if(weightSpText=="lbs") {
+            if(weightSpText.equals("lbs")) {
                 weight *= 0.453592;
             }
 
-            if(heightSpText=="feet") {
+            if(heightSpText.equals("feet") ){
                 height *= 0.3048;
             }
 
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner weight=(Spinner)findViewById(R.id.spinnerWeight);
+        /*Spinner weight=(Spinner)findViewById(R.id.spinnerWeight);
         ArrayAdapter<CharSequence> weightAdapter= ArrayAdapter.createFromResource(this,R.array.weight, android.R.layout.simple_spinner_item);
         weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         weight.setAdapter(weightAdapter);
@@ -80,6 +80,6 @@ public class MainActivity extends AppCompatActivity {
         Spinner height=(Spinner)findViewById(R.id.spinnerHeight);
         ArrayAdapter<CharSequence> heightAdapter= ArrayAdapter.createFromResource(this,R.array.height, android.R.layout.simple_spinner_item);
         heightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        height.setAdapter(heightAdapter);
+        height.setAdapter(heightAdapter);*/
     }
 }
